@@ -1,0 +1,43 @@
+Sistem de facturi fiscale - Java Swing.
+----------------------------
+Nume: Matesica Iulian-Razvan
+----------------------------
+Grupa: 321CC
+----------------------------
+Grad dificultate: mediu
+----------------------------
+Timp alocat: 3 zile
+----------------------------
+Modul de implementare:
+Pe langa implementarea claselor specificat in enuntul temei, am mai implementat
+cateva clase, cum ar fi:
+- User: username, password, isAdmin -> clasa serializabila, folosita pentru 
+sistemul de logare. Datele utilizatorilor sunt retiune intr-un fisier binar, users.dat.
+Pentru testarea aplicatiei se pot folosi urmatoarele credentiale (fara ghilimele):
+username = 'iulian.matesica'
+parola 	= '1234'
+- UserManager -> Gestiunea utilizatorilor este realizat de aceasta clasa(singleton pattern).
+Ea se ocupa de citirea si scrierea fisierului users.dat
+--------
+Despre Interfata Grafica:
+-------
+Prima fereastra care apare este fereastra de logare. Dupa logare se deschide alta fereastra
+din care mai intai trebuie incarcate datele. Dupa incarcarea datelor se genereaza fisierul
+cu rezultatele si se deblocheaza butoanele din josul ferestrei. Butonul 'Produse' duce
+catre o alta fereastra unde sunt listate toate produsele. Sortarea dupa orice criteriu,
+precum si editarea produselor se face direct din tabel. 
+In partea de sus este meniul de unde se pot salva in fisier modificarile aduse produselor,
+se poate cauta un anumit produs sau se poate sterge.
+Mai exista un meniu de filtrare de unde se poate alege daca se doreste afisarea tuturor produselor
+sau doar a produselor cu pretul diferit de zero.
+Adaugarea unui produs nou se face tot din aceeasi fereastra. 
+
+Modelul tabelului lucreaza direct pe produsele din Gestiune, orice modficare adusa in tabel
+este automat valabila si in vectorul de produse din Gestiune.
+
+Din pacate m-am apucat tarziu de tema si nu am gasit timpul necesar sa realizez o interfata frumoasa
+pentru statistici...
+
+Tema a fost testata pe Window 8.1.
+Pentru testarea temei recomand folosirea proiectului din PROIECT si nu a surselor din SURSE (lipsa 
+structura directoare de pachete, iconite, etc.)
